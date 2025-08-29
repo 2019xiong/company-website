@@ -18,8 +18,8 @@ const LeaderBoard: React.FC<LeaderboardProps> = ({ examDesc, modelScores: entiti
           <div className="flex flex-col gap-3 mt-4 mb-4">
             {
               entities.slice(0, 3).map((entity, index) => (
-                <div className="transition-opacity duration-300 border-white/10">
-                  <ScoreItem key={index} entity={entity} />
+                <div key={index} className="transition-opacity duration-300 border-white/10">
+                  <ScoreItem entity={entity} />
                 </div>
               ))
             }
