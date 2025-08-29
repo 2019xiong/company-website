@@ -1,4 +1,4 @@
-import LeaderBoard from "./Leaderboard";
+import LeaderBoard from "../components/Leaderboard";
 
 const Boards: React.FC = () => {
   return (
