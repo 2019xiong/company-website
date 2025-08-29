@@ -1,9 +1,5 @@
 import { Brain } from "lucide-react";
-
-interface ExamDesc {
-  name: string,
-  desc: string
-}
+import type { ExamDesc } from "../../types";
 
 interface TitleProps {
   examDesc: ExamDesc
