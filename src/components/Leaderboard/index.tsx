@@ -55,16 +55,20 @@ const LeaderBoard: React.FC = () => {
   return (
     <a className="rounded-lg p-6 flex flex-col justify-between transition-all duration-300 
     bg-[#1A1A1A]/80 hover:bg-[#2A2A2A]/80 group relative overflow-hidden" href="">
-      <Title examDesc={examDesc} />
       <div className="flex flex-col justify-between h-full">
-        <div className="flex flex-col gap-3 mt-4 mb-4">
-          {
-            entities.slice(0, 3).map((entity, index) => (
-              <ScoreItem key={index} entity={entity} />
-            ))
-          }
+        <Title examDesc={examDesc} />
+        <div>
+          <div className="flex flex-col gap-3 mt-4 mb-4">
+            {
+              entities.slice(0, 3).map((entity, index) => (
+                <div className="transition-opacity duration-300 border-white/10">
+                  <ScoreItem key={index} entity={entity} />
+                </div>
+              ))
+            }
+          </div>
+          <span className="text-[#a1a1aa] text-sm">View Full Ranking →</span>
         </div>
-        <span className="text-[#a1a1aa] text-sm">View Full Ranking →</span>
       </div>
     </a>
   )
