@@ -34,22 +34,22 @@ const ScoreItem: React.FC<ScoreItemProps> = ({ entity }) => {
   }
 
   const percetageStyle = {
-    width: "29.53%",
+    width: `${entity.range.centralValue}%`,
     backgroundColor: companyToBgc[entity.company] || companyToBgc["Other"]
   }
   const leftBarStyle = {
-    left: "27.55%",
+    left: `${entity.range.centralValue - entity.range.uncertainty}%`,
     top: "50%",
     transform: "translateY(-50%)"
   }
   const rightBarStyle = {
-    left: "31.51%",
+    left: `${entity.range.centralValue + entity.range.uncertainty}%`,
     top: "50%",
     transform: "translateY(-50%)"
   }
   const centerBarStyle = {
-    left: "27.55%",
-    width: "3.97%",
+    left: `${entity.range.centralValue - entity.range.uncertainty}%`,
+    width: `${2 * entity.range.uncertainty}%`,
     transform: "translateY(-50%)"
   }
 
