@@ -8,6 +8,7 @@ const TagNew: React.FC = () => {
 
 interface ScoreItemEntity {
   modelName: string,
+  company: string,
   rank: number,
   range: {
     centralValue: number,
@@ -22,10 +23,19 @@ interface ScoreItemProps {
 }
 
 const ScoreItem: React.FC<ScoreItemProps> = ({ entity }) => {
+  type companyBgcMap = Record<string, string>;
+  const companyToBgc: companyBgcMap = {
+    "OpenAI": "rgb(116, 170, 156)",
+    "Google DeepMind": "rgb(145, 119, 199)",
+    "Anthropic": "rgb(204, 120, 92)",
+    "Meta": "rgb(24, 119, 242)",
+    "Mistral": "rgb(255, 111, 0)",
+    "Other": "skyblue"
+  }
 
   const percetageStyle = {
     width: "29.53%",
-    backgroundColor: "rgb(116, 170, 156)"
+    backgroundColor: companyToBgc[entity.company] || companyToBgc["Other"]
   }
   const leftBarStyle = {
     left: "27.55%",
