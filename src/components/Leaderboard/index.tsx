@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Title from "./Title";
 import ScoreItem from "./ScoreItem";
 
@@ -53,8 +54,8 @@ const LeaderBoard: React.FC = () => {
     }
   ]
   return (
-    <a className="rounded-lg p-6 flex flex-col justify-between transition-all duration-300 
-    bg-[#1A1A1A]/80 hover:bg-[#2A2A2A]/80 group relative overflow-hidden" href="">
+    <Link className="rounded-lg p-6 flex flex-col justify-between transition-all duration-300 
+    bg-[#1A1A1A]/80 hover:bg-[#2A2A2A]/80 group relative overflow-hidden" to="/test">
       <div className="flex flex-col justify-between h-full">
         <Title examDesc={examDesc} />
         <div>
@@ -70,7 +71,7 @@ const LeaderBoard: React.FC = () => {
           <span className="text-[#a1a1aa] text-sm">View Full Ranking →</span>
         </div>
       </div>
-    </a>
+    </Link>
   )
 }
 
