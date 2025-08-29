@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
 import Title from "./Title";
 import ScoreItem from "./ScoreItem";
-import type { Entity, ExamDesc } from "../../types";
+import type { ModelScore, ExamDesc } from "../../types";
 
 interface LeaderboardProps {
   examDesc: ExamDesc;
-  entities: Entity[];
+  modelScores: ModelScore[];
 }
 
-const LeaderBoard: React.FC<LeaderboardProps> = ({ examDesc, entities }) => {
+const LeaderBoard: React.FC<LeaderboardProps> = ({ examDesc, modelScores: entities }) => {
   return (
     <Link className="rounded-lg p-6 flex flex-col justify-between transition-all duration-300 
     bg-[#1A1A1A]/80 hover:bg-[#2A2A2A]/80 group relative overflow-hidden" to={`${examDesc.name}`}>

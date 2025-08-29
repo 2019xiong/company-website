@@ -3,7 +3,7 @@ export interface ExamDesc {
   desc: string
 }
 
-export interface Entity {
+export interface ModelScore {
   modelName: string,
   company: string,
   rank: number,

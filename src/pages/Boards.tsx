@@ -54,10 +54,10 @@ const Boards: React.FC = () => {
 
   return (
     <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-      <LeaderBoard examDesc={examDesc} entities={entities}/>
-      <LeaderBoard examDesc={examDesc} entities={entities}/>
-      <LeaderBoard examDesc={examDesc} entities={entities}/>
-      <LeaderBoard examDesc={examDesc} entities={entities}/>
+      <LeaderBoard examDesc={examDesc} modelScores={entities}/>
+      <LeaderBoard examDesc={examDesc} modelScores={entities}/>
+      <LeaderBoard examDesc={examDesc} modelScores={entities}/>
+      <LeaderBoard examDesc={examDesc} modelScores={entities}/>
     </div>
   )
 }
