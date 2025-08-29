@@ -3,7 +3,9 @@ import Boards from "./components/Boards";
 function App() {
 
   return (
-    <Boards />
+    <div className="flex justify-center mt-8">
+      <Boards />
+    </div>
   )
 }
 

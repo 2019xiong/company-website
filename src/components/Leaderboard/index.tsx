@@ -1,4 +1,5 @@
 import Title from "./Title";
+import ScoreItem from "./ScoreItem";
 
 const LeaderBoard: React.FC = () => {
   return (
@@ -7,9 +8,9 @@ const LeaderBoard: React.FC = () => {
       <Title />
       <div className="flex flex-col justify-between h-full">
         <div className="flex flex-col gap-3 mt-4 mb-4">
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
+          <ScoreItem />
+          <ScoreItem />
+          <ScoreItem />
         </div>
         <span className="text-[#a1a1aa] text-sm">View Full Ranking →</span>
       </div>
