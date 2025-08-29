@@ -6,16 +6,22 @@ const TagNew: React.FC = () => {
   )
 }
 
-const ScoreItem: React.FC = () => {
-  const entity = {
-    modelName: "gpt-5-2025-08-07",
-    range: {
-      centralValue: 25.32,
-      uncertainty: 1.70
-    },
-    isNew: true,
-    alertMsg: ""
-  }
+interface ScoreItemEntity {
+  modelName: string,
+  rank: number,
+  range: {
+    centralValue: number,
+    uncertainty: number
+  },
+  isNew: boolean,
+  alertMsg: string
+}
+
+interface ScoreItemProps {
+  entity: ScoreItemEntity,
+}
+
+const ScoreItem: React.FC<ScoreItemProps> = ({ entity }) => {
 
   const percetageStyle = {
     width: "29.53%",
@@ -40,7 +46,7 @@ const ScoreItem: React.FC = () => {
   return (
     <div className="flex gap-3">
       <div className="flex items-center justify-center shrink-0 w-10 h-10 text-gray-400 rounded-md bg-stone-800">
-        <span className="text-sm">1</span>
+        <span className="text-sm">{entity.rank}</span>
       </div>
       <div className="flex flex-col justify-between grow overflow-hidden">
         <div className="flex items-center align-bottom pb-[2px] h-[22px] gap-x-2">
