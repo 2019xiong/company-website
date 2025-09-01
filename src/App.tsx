@@ -5,11 +5,7 @@ import Detail from "./pages/Detail";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: (
-      <div className="flex justify-center mt-8">
-        <Boards />
-      </div>
-    )
+    element: <Boards />
   },
   {
     path: "/:id",
