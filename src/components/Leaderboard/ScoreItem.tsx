@@ -69,8 +69,8 @@ const ScoreItem: React.FC<ScoreItemProps> = ({ entity }) => {
             </div>
           </button>
           <p className="ml-auto text-xs text-nowrap space-x-1.5">
-            <span className="text-white">{entity.range.centralValue}</span>
-            <span className="text-gray-400">{"±"}{entity.range.uncertainty}</span>
+            <span className="text-white">{entity.range.centralValue.toFixed(2)}</span>
+            <span className="text-gray-400">{"±"}{entity.range.uncertainty.toFixed(2)}</span>
           </p>
         </div>
         {/* TODO: 还有一个data-state标签，值为closed */}
