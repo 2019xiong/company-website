@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import LeaderBoard from "../components/Leaderboard";
-import { fetchLeaderBoard } from "../api/Leaderboard";
-import type { ExamResponse } from "../types";
+import LeaderBoard from "../../components/Leaderboard";
+import { fetchLeaderBoard } from "../../api/Leaderboard";
+import type { ExamResponse } from "../../types";
 
 const Boards: React.FC = () => {
   const [exams, setExams] = useState<ExamResponse[]>([]);
