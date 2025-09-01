@@ -11,7 +11,7 @@ interface LeaderboardProps {
 const LeaderBoard: React.FC<LeaderboardProps> = ({ examDesc, modelScores: entities }) => {
   return (
     <Link className="rounded-lg p-6 flex flex-col justify-between transition-all duration-300 
-    bg-[#1A1A1A]/80 hover:bg-[#2A2A2A]/80 group relative overflow-hidden" state={{ examDesc, entities }} to={`${examDesc.name}`}>
+    bg-[#1A1A1A]/80 hover:bg-[#2A2A2A]/80 group relative overflow-hidden" state={entities} to={`${examDesc.name}`}>
       <div className="flex flex-col justify-between h-full">
         <Title examDesc={examDesc} />
         <div>
