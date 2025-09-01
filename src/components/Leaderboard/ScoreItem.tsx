@@ -65,7 +65,7 @@ const ScoreItem: React.FC<ScoreItemProps> = ({ entity }) => {
             <div className="flex items-center gap-2">
               <p className="text-sm overflow-hidden text-ellipsis whitespace-nowrap min-w-0 text-white/70" title={entity.modelName}>{entity.modelName}</p>
               {entity.isNew && <TagNew />}
-              <CircleAlert className="shrink-0 inline-block w-4 h-4 mt-[2px]" />
+              {entity.alertMsg && <CircleAlert className="shrink-0 inline-block w-4 h-4 mt-[2px]" />}
             </div>
           </button>
           <p className="ml-auto text-xs text-nowrap space-x-1.5">

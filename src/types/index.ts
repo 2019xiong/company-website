@@ -14,3 +14,9 @@ export interface ModelScore {
   isNew: boolean,
   alertMsg: string
 }
+
+export interface ExamResponse {
+  id: number,
+  examDesc: ExamDesc,
+  modelScores: ModelScore[]
+}
