@@ -12,7 +12,7 @@ const Boards: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex justify-center mt-8">
+    <div className="container mx-auto p-8">
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {
           exams.map((entity, index) => (
