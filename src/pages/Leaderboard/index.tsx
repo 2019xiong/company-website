@@ -31,6 +31,21 @@ const Header: React.FC = () => {
   );
 }
 
+const Footer: React.FC = () => {
+  return (
+    <footer className="w-full py-6 border-t border-white/10">
+      <div className="container flex flex-col items-center justify-between px-4 mx-auto sm:px-6 max-w-7xl sm:flex-row text-zinc-400">
+        <p className="mb-4 text-xs sm:mb-0">Copyright 2025 OneStar Inc. All rights reserved.</p>
+        <div className="flex items-center gap-2">
+          <Link to="#">Terms of Use</Link>
+          <span>&</span>
+          <Link to="#">Privacy Policy</Link>
+        </div>
+      </div>
+    </footer>
+  );
+}
+
 const Leaderboard: React.FC = () => {
   return (
     <div className="min-h-screen text-xs text-white bg-black relative">
@@ -44,7 +59,7 @@ const Leaderboard: React.FC = () => {
       <section>
         <Description />
       </section>
-      <footer className="w-full py-6 border-t border-white/10">this is footer</footer>
+      <Footer />
     </div>
   );
 };
