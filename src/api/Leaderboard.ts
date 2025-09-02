@@ -42,6 +42,72 @@ const entity: ExamResponse[] = [
         alertMsg: ""
       },
       {
+        modelName: "gpt-5-mini-2025-08-07",
+        company: "OpenAI",
+        rank: 2,
+        range: {
+          centralValue: 19.44,
+          uncertainty: 1.55
+        },
+        isNew: true,
+        alertMsg: ""
+      },
+      {
+        modelName: "o3 (medium) (April 2025)",
+        company: "OpenAI",
+        rank: 2,
+        range: {
+          centralValue: 19.20,
+          uncertainty: 1.54
+        },
+        isNew: false,
+        alertMsg: ""
+      },
+      {
+        modelName: "Gemini 2.5 Pro Experimental (March 2025)",
+        company: "Google DeepMind",
+        rank: 3,
+        range: {
+          centralValue: 18.16,
+          uncertainty: 1.51
+        },
+        isNew: false,
+        alertMsg: ""
+      },
+      {
+        modelName: "o4-mini (high) (April 2025)",
+        company: "OpenAI",
+        rank: 3,
+        range: {
+          centralValue: 18.08,
+          uncertainty: 1.51
+        },
+        isNew: false,
+        alertMsg: ""
+      },
+      {
+        modelName: "gpt-4-turbo-2025-08-06",
+        company: "OpenAI",
+        rank: 3,
+        range: {
+          centralValue: 17.80,
+          uncertainty: 1.50
+        },
+        isNew: false,
+        alertMsg: ""
+      },
+      {
+        modelName: "o3 (base) (April 2025)",
+        company: "OpenAI",
+        rank: 9,
+        range: {
+          centralValue: 14.28,
+          uncertainty: 1.37
+        },
+        isNew: false,
+        alertMsg: ""
+      },
+      {
         modelName: "claude-opus-4-1-20250805-thinking",
         company: "Anthropic",
         rank: 10,
@@ -121,6 +187,146 @@ const entity: ExamResponse[] = [
         range: {
           centralValue: 92.00,
           uncertainty: 0.86
+        },
+        isNew: true,
+        alertMsg: ""
+      },
+    ]
+  },
+  {
+    id: 4,
+    examDesc: {
+      name: "TruthfulQA",
+      desc: "Assessing LLMs on their ability to avoid false answers"
+    },
+    modelScores: [
+      {
+        modelName: "gpt-5-2025-08-07",
+        company: "OpenAI",
+        rank: 1,
+        range: {
+          centralValue: 83.00,
+          uncertainty: 2.50
+        },
+        isNew: true,
+        alertMsg: ""
+      },
+    ]
+  },
+  {
+    id: 5,
+    examDesc: {
+      name: "MMLU",
+      desc: "Massive Multitask Language Understanding"
+    },
+    modelScores: [
+      {
+        modelName: "gpt-5-2025-08-07",
+        company: "OpenAI",
+        rank: 1,
+        range: {
+          centralValue: 86.50,
+          uncertainty: 1.20
+        },
+        isNew: true,
+        alertMsg: ""
+      },
+    ]
+  },
+  {
+    id: 6,
+    examDesc: {
+      name: "HellaSwag",
+      desc: "A large-scale dataset for commonsense reasoning"
+    },
+    modelScores: [
+      {
+        modelName: "gpt-5-2025-08-07",
+        company: "OpenAI",
+        rank: 1,
+        range: {
+          centralValue: 90.00,
+          uncertainty: 1.00
+        },
+        isNew: true,
+        alertMsg: ""
+      },
+    ]
+  },
+  {
+    id: 7,
+    examDesc: {
+      name: "BBQ",
+      desc: "Benchmark for Biases in Question Answering"
+    },
+    modelScores: [
+      {
+        modelName: "gpt-5-2025-08-07",
+        company: "OpenAI",
+        rank: 1,
+        range: {
+          centralValue: 88.00,
+          uncertainty: 1.50
+        },
+        isNew: true,
+        alertMsg: ""
+      },
+    ]
+  },
+  {
+    id: 8,
+    examDesc: {
+      name: "OpenBookQA",
+      desc: "A dataset for open book question answering"
+    },
+    modelScores: [
+      {
+        modelName: "gpt-5-2025-08-07",
+        company: "OpenAI",
+        rank: 1,
+        range: {
+          centralValue: 78.00,
+          uncertainty: 2.00
+        },
+        isNew: true,
+        alertMsg: ""
+      },
+    ]
+  },
+  {
+    id: 9,
+    examDesc: {
+      name: "WinoGrande",
+      desc: "A large-scale dataset for pronoun resolution"
+    },
+    modelScores: [
+      {
+        modelName: "gpt-5-2025-08-07",
+        company: "OpenAI",
+        rank: 1,
+        range: {
+          centralValue: 85.00,
+          uncertainty: 1.30
+        },
+        isNew: true,
+        alertMsg: ""
+      },
+    ]
+  },
+  {
+    id: 10,
+    examDesc: {
+      name: "LAMBADA",
+      desc: "A dataset for testing the ability to understand long-range context"
+    },
+    modelScores: [
+      {
+        modelName: "gpt-5-2025-08-07",
+        company: "OpenAI",
+        rank: 1,
+        range: {
+          centralValue: 92.00,
+          uncertainty: 0.90
         },
         isNew: true,
         alertMsg: ""
