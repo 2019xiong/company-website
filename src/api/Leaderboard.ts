@@ -117,7 +117,73 @@ const entity: ExamResponse[] = [
         },
         isNew: false,
         alertMsg: ""
-      }
+      },
+      {
+        modelName: "claude-opus-4-1-20250805-thinking",
+        company: "Anthropic",
+        rank: 1,
+        range: {
+          centralValue: 94.20,
+          uncertainty: 1.79
+        },
+        isNew: false,
+        alertMsg: ""
+      },
+      {
+        modelName: "gpt-oss-120b",
+        company: "OpenAI",
+        rank: 2,
+        range: {
+          centralValue: 92.00,
+          uncertainty: 0.86
+        },
+        isNew: true,
+        alertMsg: ""
+      },
+      {
+        modelName: "claude-opus-4-1-20250805-thinking",
+        company: "Anthropic",
+        rank: 1,
+        range: {
+          centralValue: 94.20,
+          uncertainty: 1.79
+        },
+        isNew: false,
+        alertMsg: ""
+      },
+      {
+        modelName: "gpt-oss-120b",
+        company: "OpenAI",
+        rank: 2,
+        range: {
+          centralValue: 92.00,
+          uncertainty: 0.86
+        },
+        isNew: true,
+        alertMsg: ""
+      },
+      {
+        modelName: "claude-opus-4-1-20250805-thinking",
+        company: "Anthropic",
+        rank: 1,
+        range: {
+          centralValue: 94.20,
+          uncertainty: 1.79
+        },
+        isNew: false,
+        alertMsg: ""
+      },
+      {
+        modelName: "gpt-oss-120b",
+        company: "OpenAI",
+        rank: 2,
+        range: {
+          centralValue: 92.00,
+          uncertainty: 0.86
+        },
+        isNew: true,
+        alertMsg: ""
+      },
     ]
   },
   {
@@ -160,6 +226,50 @@ const entity: ExamResponse[] = [
         isNew: false,
         alertMsg: ""
       },
+      {
+        modelName: "claude-opus-4-1-20250805-thinking",
+        company: "Anthropic",
+        rank: 1,
+        range: {
+          centralValue: 94.20,
+          uncertainty: 1.79
+        },
+        isNew: false,
+        alertMsg: ""
+      },
+      {
+        modelName: "gpt-oss-120b",
+        company: "OpenAI",
+        rank: 2,
+        range: {
+          centralValue: 92.00,
+          uncertainty: 0.86
+        },
+        isNew: true,
+        alertMsg: ""
+      },
+      {
+        modelName: "claude-opus-4-1-20250805-thinking",
+        company: "Anthropic",
+        rank: 1,
+        range: {
+          centralValue: 94.20,
+          uncertainty: 1.79
+        },
+        isNew: false,
+        alertMsg: ""
+      },
+      {
+        modelName: "gpt-oss-120b",
+        company: "OpenAI",
+        rank: 2,
+        range: {
+          centralValue: 92.00,
+          uncertainty: 0.86
+        },
+        isNew: true,
+        alertMsg: ""
+      },
     ]
   },
   {
@@ -173,6 +283,28 @@ const entity: ExamResponse[] = [
         modelName: "claude-opus-4-1-20250805-thinking",
         company: "Anthropic",
         rank: 1,
+        range: {
+          centralValue: 94.20,
+          uncertainty: 1.79
+        },
+        isNew: false,
+        alertMsg: ""
+      },
+      {
+        modelName: "gpt-oss-120b",
+        company: "OpenAI",
+        rank: 2,
+        range: {
+          centralValue: 92.00,
+          uncertainty: 0.86
+        },
+        isNew: true,
+        alertMsg: ""
+      },
+      {
+        modelName: "claude-opus-4-1-20250805-thinking",
+        company: "Anthropic",
+        rank: 2,
         range: {
           centralValue: 94.20,
           uncertainty: 1.79
@@ -211,6 +343,39 @@ const entity: ExamResponse[] = [
         isNew: true,
         alertMsg: ""
       },
+      {
+        modelName: "o3-pro-2025-06-10-high",
+        company: "OpenAI",
+        rank: 2,
+        range: {
+          centralValue: 79.50,
+          uncertainty: 2.45
+        },
+        isNew: false,
+        alertMsg: ""
+      },
+      {
+        modelName: "claude-opus-4-1-20250805-thinking",
+        company: "Anthropic",
+        rank: 1,
+        range: {
+          centralValue: 94.20,
+          uncertainty: 1.79
+        },
+        isNew: false,
+        alertMsg: ""
+      },
+      {
+        modelName: "gpt-oss-120b",
+        company: "OpenAI",
+        rank: 2,
+        range: {
+          centralValue: 92.00,
+          uncertainty: 0.86
+        },
+        isNew: true,
+        alertMsg: ""
+      },
     ]
   },
   {
@@ -227,6 +392,39 @@ const entity: ExamResponse[] = [
         range: {
           centralValue: 86.50,
           uncertainty: 1.20
+        },
+        isNew: true,
+        alertMsg: ""
+      },
+      {
+        modelName: "o3-pro-2025-06-10-high",
+        company: "OpenAI",
+        rank: 2,
+        range: {
+          centralValue: 82.30,
+          uncertainty: 1.30
+        },
+        isNew: false,
+        alertMsg: ""
+      },
+      {
+        modelName: "claude-opus-4-1-20250805-thinking",
+        company: "Anthropic",
+        rank: 1,
+        range: {
+          centralValue: 94.20,
+          uncertainty: 1.79
+        },
+        isNew: false,
+        alertMsg: ""
+      },
+      {
+        modelName: "gpt-oss-120b",
+        company: "OpenAI",
+        rank: 2,
+        range: {
+          centralValue: 92.00,
+          uncertainty: 0.86
         },
         isNew: true,
         alertMsg: ""
@@ -251,6 +449,28 @@ const entity: ExamResponse[] = [
         isNew: true,
         alertMsg: ""
       },
+      {
+        modelName: "o3-pro-2025-06-10-high",
+        company: "OpenAI",
+        rank: 2,
+        range: {
+          centralValue: 85.50,
+          uncertainty: 1.20
+        },
+        isNew: false,
+        alertMsg: ""
+      },
+      {
+        modelName: "gemini-2.5-pro-preview-06-05",
+        company: "Google DeepMind",
+        rank: 3,
+        range: {
+          centralValue: 83.00,
+          uncertainty: 1.30
+        },
+        isNew: false,
+        alertMsg: ""
+      }
     ]
   },
   {
@@ -267,6 +487,28 @@ const entity: ExamResponse[] = [
         range: {
           centralValue: 88.00,
           uncertainty: 1.50
+        },
+        isNew: true,
+        alertMsg: ""
+      },
+      {
+        modelName: "claude-opus-4-1-20250805-thinking",
+        company: "Anthropic",
+        rank: 1,
+        range: {
+          centralValue: 94.20,
+          uncertainty: 1.79
+        },
+        isNew: false,
+        alertMsg: ""
+      },
+      {
+        modelName: "gpt-oss-120b",
+        company: "OpenAI",
+        rank: 2,
+        range: {
+          centralValue: 92.00,
+          uncertainty: 0.86
         },
         isNew: true,
         alertMsg: ""
@@ -291,6 +533,28 @@ const entity: ExamResponse[] = [
         isNew: true,
         alertMsg: ""
       },
+      {
+        modelName: "claude-opus-4-1-20250805-thinking",
+        company: "Anthropic",
+        rank: 1,
+        range: {
+          centralValue: 94.20,
+          uncertainty: 1.79
+        },
+        isNew: false,
+        alertMsg: ""
+      },
+      {
+        modelName: "gpt-oss-120b",
+        company: "OpenAI",
+        rank: 2,
+        range: {
+          centralValue: 92.00,
+          uncertainty: 0.86
+        },
+        isNew: true,
+        alertMsg: ""
+      },
     ]
   },
   {
@@ -311,6 +575,28 @@ const entity: ExamResponse[] = [
         isNew: true,
         alertMsg: ""
       },
+      {
+        modelName: "claude-opus-4-1-20250805-thinking",
+        company: "Anthropic",
+        rank: 1,
+        range: {
+          centralValue: 94.20,
+          uncertainty: 1.79
+        },
+        isNew: false,
+        alertMsg: ""
+      },
+      {
+        modelName: "gpt-oss-120b",
+        company: "OpenAI",
+        rank: 2,
+        range: {
+          centralValue: 92.00,
+          uncertainty: 0.86
+        },
+        isNew: true,
+        alertMsg: ""
+      },
     ]
   },
   {
@@ -327,6 +613,28 @@ const entity: ExamResponse[] = [
         range: {
           centralValue: 92.00,
           uncertainty: 0.90
+        },
+        isNew: true,
+        alertMsg: ""
+      },
+      {
+        modelName: "claude-opus-4-1-20250805-thinking",
+        company: "Anthropic",
+        rank: 1,
+        range: {
+          centralValue: 94.20,
+          uncertainty: 1.79
+        },
+        isNew: false,
+        alertMsg: ""
+      },
+      {
+        modelName: "gpt-oss-120b",
+        company: "OpenAI",
+        rank: 2,
+        range: {
+          centralValue: 92.00,
+          uncertainty: 0.86
         },
         isNew: true,
         alertMsg: ""
