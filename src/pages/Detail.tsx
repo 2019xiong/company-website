@@ -16,7 +16,17 @@ const Detail: React.FC = () => {
     <div className="min-h-screen bg-black ">
       <div className="container py-8 mx-auto overflow-hidden lg:max-w-[1312px]">
         <h1 className="text-white text-4xl font-medium font-aeonik mb-8">{id}</h1>
-        <div className="flex flex-col-reverse lg:flex-row lg:grid lg:grid-cols-2 lg:gap-16">
+        <div className="flex flex-col lg:flex-row lg:grid lg:grid-cols-2 lg:gap-16">
+          <div>
+            <div className="space-y-6 text-gray-300">
+              <h2 className="text-xl text-white font-aeonik">Performance Comparision</h2>
+              <div className="relative">
+                <div className="space-y-3 overflow-auto h-auto">
+                  {entities.map((entity, index) => <ScoreItem key={index} entity={entity} />)}
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="flex-1 mb-8 lg:max-w-screen-sm lg:mb-0 mt-20 lg:mt-0">
             <div className="max-w-full prose-x prose break-words prose:text-gray-300 text-gray-300 prose-invert prose-headings:mt-0 prose-headings:text-white prose-headings:font-medium prose-img:w-full prose-img:my-0 [&_p:first-child]:mt-0 prose-p:before:content-none prose-p:after:content-none prose-blockquote:not-italic prose-blockquote:font-normal lg:prose-sm">
               <p><b>Update April 3, 2025</b></p>
@@ -88,16 +98,6 @@ const Detail: React.FC = () => {
             <div className="flex items-center mt-2 text-sm sm:mt-0 text-zinc-400">
               <Calendar className="inline-block w-4 h-4 mr-1.5" />
               <span>{"Last updated: "}{data.updateTime}</span>
-            </div>
-          </div>
-          <div>
-            <div className="space-y-6 text-gray-300">
-              <h2 className="text-xl text-white font-aeonik">Performance Comparision</h2>
-              <div className="relative">
-                <div className="space-y-3 overflow-auto h-auto">
-                  {entities.map((entity, index) => <ScoreItem key={index} entity={entity} />)}
-                </div>
-              </div>
             </div>
           </div>
         </div>
