@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Triangle, Search } from "lucide-react";
 import Description from "./Description";
@@ -5,6 +6,19 @@ import Introduction from "./Introduction";
 import Boards from "./Boards";
 
 const Header: React.FC = () => {
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === "k") {
+        event.preventDefault();
+        alert("pressed ctrl k")
+      }
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
   return (
     <header className="sticky top-0 z-30 w-full border-b bg-black/30 backdrop-blur-md border-white/10">
       <div className="container mx-auto p-8 flex items-center justify-between h-16">
@@ -21,7 +35,8 @@ const Header: React.FC = () => {
         </div>
         <div className="flex items-center gap-4">
           <div>
-            <button type="button" className="p-2 rounded-full hover:bg-zinc-800/50 transition-colors flex items-center gap-1">
+            <button type="button" className="cursor-pointer p-2 rounded-full hover:bg-zinc-800/50 transition-colors flex items-center gap-1">
+              <span>Ctrl K</span>
               <Search />
             </button>
           </div>
