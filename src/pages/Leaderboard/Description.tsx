@@ -12,7 +12,7 @@ const DescItem: React.FC<DescItemProps> = ({ title, content, icon: Icon, color})
   return (
     <div>
       <Icon className={`w-5 h-5 mb-4 ${color}`} />
-      <h3 className="tmb-3 text-base font-medium tracking-tight">{title}</h3>
+      <h3 className="mb-3 text-base font-medium tracking-tight">{title}</h3>
       <p className="text-sm leading-relaxed tracking-tight text-zinc-400">{content}</p>
     </div>
   )
